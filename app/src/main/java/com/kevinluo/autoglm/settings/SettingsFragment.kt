@@ -8,6 +8,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.PowerManager
 import android.provider.Settings
+import android.view.inputmethod.InputMethodManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -572,12 +573,9 @@ class SettingsFragment : Fragment() {
     }
 
     private fun isKeyboardEnabled(): Boolean {
-        val enabledInputMethods =
-            Settings.Secure.getString(
-                requireContext().contentResolver,
-                Settings.Secure.ENABLED_INPUT_METHODS,
-            ) ?: ""
-        return enabledInputMethods.contains(requireContext().packageName)
+        val imm = requireContext().getSystemService(InputMethodManager::class.java)
+        val enabledInputMethods = imm.enabledInputMethodList
+        return enabledInputMethods.any { it.packageName == requireContext().packageName }
     }
 
     private fun isBatteryOptimizationIgnored(): Boolean {

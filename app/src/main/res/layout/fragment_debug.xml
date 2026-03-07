@@ -306,7 +306,7 @@
                             android:layout_height="400dp"
                             android:layout_marginTop="12dp"
                             android:background="@color/surface_variant"
-                            android:nestedScrollingEnabled="true" />
+ />
 
                     </LinearLayout>
 
@@ -369,7 +369,8 @@
                             android:indeterminate="true"
                             android:visibility="gone" />
 
-                        <ScrollView
+                        <androidx.core.widget.NestedScrollView
+                            android:id="@+id/responseScrollView"
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:layout_marginTop="12dp"
@@ -384,7 +385,7 @@
                                 android:textColor="@color/text_primary"
                                 android:textSize="14sp" />
 
-                        </ScrollView>
+                        </androidx.core.widget.NestedScrollView>
 
                     </LinearLayout>
 
@@ -426,7 +427,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
-                            android:nestedScrollingEnabled="false" />
+ />
 
                     </LinearLayout>
 

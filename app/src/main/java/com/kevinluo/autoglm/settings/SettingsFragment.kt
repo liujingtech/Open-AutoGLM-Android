@@ -905,7 +905,10 @@ class SettingsFragment : Fragment() {
             val message =
                 when (result) {
                     is ModelClient.TestResult.Success -> {
-                        getString(R.string.settings_test_success, result.latencyMs)
+                        // 测试成功后自动保存配置
+                        settingsManager.saveModelConfig(testConfig)
+                        Logger.d(TAG, "Auto-saved model config after successful test")
+                        getString(R.string.settings_test_success, result.latencyMs) + "\n(已自动保存)"
                     }
 
                     is ModelClient.TestResult.AuthError -> {

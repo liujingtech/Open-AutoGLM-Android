@@ -18,4 +18,9 @@
         android:id="@+id/settingsFragment"
         android:name="com.kevinluo.autoglm.settings.SettingsFragment"
         android:label="@string/nav_settings" />
+
+    <fragment
+        android:id="@+id/debugFragment"
+        android:name="com.kevinluo.autoglm.debug.DebugFragment"
+        android:label="@string/nav_debug" />
 </navigation>

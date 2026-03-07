@@ -173,14 +173,13 @@ class SettingsManager private constructor(private val context: Context) {
      */
     fun getModelConfig(): ModelConfig {
         Logger.d(TAG, "Loading model configuration")
+        val apiKey = securePrefs.getString(KEY_API_KEY, null)
+        Logger.d(TAG, "API key from securePrefs: ${if (apiKey != null) "length=${apiKey.length}" else "null"}")
         return ModelConfig(
             baseUrl =
             prefs.getString(KEY_BASE_URL, DEFAULT_MODEL_CONFIG.baseUrl)
                 ?: DEFAULT_MODEL_CONFIG.baseUrl,
-            apiKey =
-            securePrefs
-                .getString(KEY_API_KEY, DEFAULT_MODEL_CONFIG.apiKey)
-                ?.ifEmpty { "EMPTY" } ?: "EMPTY",
+            apiKey = apiKey?.ifEmpty { "EMPTY" } ?: "EMPTY",
             modelName =
             prefs.getString(KEY_MODEL_NAME, DEFAULT_MODEL_CONFIG.modelName)
                 ?: DEFAULT_MODEL_CONFIG.modelName,
@@ -202,7 +201,7 @@ class SettingsManager private constructor(private val context: Context) {
      *
      */
     fun saveModelConfig(config: ModelConfig) {
-        Logger.d(TAG, "Saving model configuration: baseUrl=${config.baseUrl}, modelName=${config.modelName}")
+        Logger.d(TAG, "Saving model configuration: baseUrl=${config.baseUrl}, modelName=${config.modelName}, apiKeyLength=${config.apiKey.length}")
         // Save non-sensitive data to regular prefs
         prefs.edit().apply {
             putString(KEY_BASE_URL, config.baseUrl)

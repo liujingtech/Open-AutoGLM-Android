@@ -394,7 +394,7 @@
     <string name="debug_api_url">API</string>
     <string name="debug_input_data">📥 输入数据</string>
     <string name="debug_notification_count">通知数量</string>
-    <string name="debug_distribution">分布</string>
+    <string name="debug_distribution_short">分布</string>
     <string name="debug_system_prompt">🤖 系统提示词</string>
     <string name="debug_user_prompt">👤 用户提示词</string>
     <string name="debug_model_response">📤 模型响应</string>

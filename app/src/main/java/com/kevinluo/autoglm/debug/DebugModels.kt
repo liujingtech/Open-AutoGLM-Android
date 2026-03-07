@@ -64,6 +64,8 @@ data class DistributionConfig(
 ) {
     fun toList(): List<Int> = listOf(wechatQQPercent, workWechatPercent, smsPercent, otherPercent)
 
+    fun toDisplayString(): String = "微信/QQ:${wechatQQPercent}%, 企业微信:${workWechatPercent}%, 短信:${smsPercent}%, 其他:${otherPercent}%"
+
     companion object {
         fun fromList(list: List<Int>): DistributionConfig {
             return DistributionConfig(
@@ -86,6 +88,14 @@ data class DistributionConfig(
  * @property modelResponse 模型响应
  * @property timestamp 测试时间
  * @property success 是否成功
+ * @property systemPrompt 系统提示词
+ * @property userPrompt 完整用户提示词（模板+数据）
+ * @property modelName 模型名称
+ * @property baseUrl API 基础 URL
+ * @property temperature 温度参数
+ * @property maxTokens 最大 token 数
+ * @property notificationCount 输入通知数量
+ * @property notificationDistribution 通知类型分布
  */
 data class DebugTestHistory(
     val id: String = UUID.randomUUID().toString(),
@@ -94,5 +104,14 @@ data class DebugTestHistory(
     val inputNotifications: String,
     val modelResponse: String,
     val timestamp: Long = System.currentTimeMillis(),
-    val success: Boolean = true
+    val success: Boolean = true,
+    // 新增字段 - 用于提示词优化
+    val systemPrompt: String = "",
+    val userPrompt: String = "",
+    val modelName: String = "",
+    val baseUrl: String = "",
+    val temperature: Float = 0.7f,
+    val maxTokens: Int = 4096,
+    val notificationCount: Int = 0,
+    val notificationDistribution: String = ""
 )

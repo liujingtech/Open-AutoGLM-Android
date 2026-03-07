@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">AutoGLM For Android</string>
-    
+
     <!-- Bottom Navigation -->
     <string name="nav_home">首页</string>
     <string name="nav_history">历史</string>
     <string name="nav_settings">设置</string>
-    
+
     <!-- Permissions Center -->
     <string name="permissions_center_title">权限状态</string>
     <string name="permissions_summary_default">检查中...</string>
@@ -15,7 +15,7 @@
     <string name="permission_action_enable">启用</string>
     <string name="permission_granted">已授权</string>
     <string name="permission_not_granted">未授权</string>
-    
+
     <!-- Shizuku Status -->
     <string name="shizuku_status_title">Shizuku 状态</string>
     <string name="shizuku_status_unknown">未知</string>
@@ -25,33 +25,33 @@
     <string name="shizuku_status_connected">已连接</string>
     <string name="request_shizuku_permission">授权</string>
     <string name="open_shizuku">打开 Shizuku</string>
-    
+
     <!-- Overlay Permission -->
     <string name="overlay_permission_title">悬浮窗权限</string>
     <string name="overlay_permission_granted">已授权</string>
     <string name="overlay_permission_denied">未授权</string>
     <string name="request_overlay_permission">授权</string>
-    
+
     <!-- Battery Optimization -->
     <string name="battery_opt_title">电池优化</string>
     <string name="battery_opt_ignored">已忽略电池优化</string>
     <string name="battery_opt_not_ignored">未忽略电池优化</string>
     <string name="battery_opt_request">去设置</string>
     <string name="battery_opt_description">忽略电池优化可以让任务在后台更稳定地执行</string>
-    
+
     <!-- AutoGLM Keyboard -->
     <string name="keyboard_title">输入法</string>
     <string name="keyboard_enabled">已启用</string>
     <string name="keyboard_not_enabled">未启用</string>
     <string name="enable_keyboard">去启用</string>
     <string name="toast_keyboard_required">需要启用 AutoGLM Keyboard 才能输入文字</string>
-    
+
     <!-- Task Section -->
     <string name="task_section_label">任务输入</string>
     <string name="task_input_hint">描述你想要执行的任务...</string>
     <string name="start_task">启动</string>
     <string name="cancel_task">停止</string>
-    
+
     <!-- Task Status -->
     <string name="task_status_label">状态</string>
     <string name="task_status_idle">空闲</string>
@@ -64,12 +64,12 @@
     <string name="step_counter_format">步骤: %d</string>
     <string name="pause_task">暂停</string>
     <string name="resume_task">继续</string>
-    
+
     <!-- Output Section -->
     <string name="output_section_label">执行日志</string>
     <string name="output_description">查看任务执行的详细日志</string>
     <string name="output_placeholder">日志将显示在这里...</string>
-    
+
     <!-- Toast Messages -->
     <string name="toast_shizuku_not_running">请先启动 Shizuku</string>
     <string name="toast_shizuku_version_low">Shizuku 版本过低</string>
@@ -85,7 +85,7 @@
     <string name="toast_overlay_permission_required">需要悬浮窗权限</string>
     <string name="toast_task_already_running">已有任务正在执行</string>
     <string name="toast_phone_agent_not_ready">代理未就绪，请稍后重试</string>
-    
+
     <!-- Settings Activity -->
     <string name="settings_title">设置</string>
     <string name="settings_model_section">模型配置</string>
@@ -132,7 +132,7 @@
     <string name="settings_test_connection_error">连接失败: %s</string>
     <string name="settings_test_timeout">连接超时: %s</string>
     <string name="settings_test_invalid_config">请先填写完整的配置信息</string>
-    
+
     <!-- Task Templates -->
     <string name="settings_task_templates">任务模板</string>
     <string name="settings_task_templates_description">保存常用任务，快速填入</string>
@@ -148,7 +148,7 @@
     <string name="settings_delete_template_confirm">确定要删除此模板吗？</string>
     <string name="settings_no_templates">暂无模板</string>
     <string name="task_select_template">选择模板</string>
-    
+
     <!-- Advanced Settings -->
     <string name="settings_advanced">高级设置</string>
     <string name="settings_advanced_description">自定义系统提示词</string>
@@ -163,7 +163,7 @@
     <string name="settings_system_prompt_reset_done">已重置为默认提示词</string>
     <string name="settings_system_prompt_custom">已自定义</string>
     <string name="settings_system_prompt_default">默认</string>
-    
+
     <!-- Dialog Strings -->
     <string name="dialog_confirm_title">确认操作</string>
     <string name="dialog_confirm_message">确定要执行此操作吗？</string>
@@ -172,13 +172,13 @@
     <string name="dialog_choose_option">选择选项</string>
     <string name="dialog_select_option">请选择以下选项之一</string>
     <string name="cancel">取消</string>
-    
+
     <!-- Takeover Prompt -->
     <string name="takeover_title">需要手动操作</string>
     <string name="takeover_message">请完成以下操作</string>
     <string name="takeover_instructions_placeholder">操作说明将显示在这里</string>
     <string name="takeover_continue">已完成，继续</string>
-    
+
     <!-- Floating Window -->
     <string name="floating_thinking_label">思考</string>
     <string name="floating_action_label">操作</string>
@@ -190,15 +190,15 @@
     <string name="floating_open">打开悬浮窗</string>
     <string name="floating_new_task">新任务</string>
     <string name="floating_thinking">正在思考...</string>
-    
+
     <!-- Quick Actions -->
     <string name="quick_action_floating">悬浮窗</string>
     <string name="quick_action_history">历史记录</string>
-    
+
     <!-- Quick Settings Tile -->
     <string name="tile_floating_window">AutoGLM</string>
     <string name="tile_floating_window_desc">显示/隐藏悬浮窗</string>
-    
+
     <!-- Foreground Service Notifications -->
     <string name="notification_service_running">服务运行中</string>
     <string name="notification_task_running">任务执行中...</string>
@@ -207,7 +207,7 @@
     <string name="notification_task_failed">任务执行失败</string>
     <string name="notification_waiting_confirm">等待确认操作</string>
     <string name="notification_waiting_takeover">需要手动操作</string>
-    
+
     <!-- History -->
     <string name="history_title">历史记录</string>
     <string name="history_detail_title">任务详情</string>
@@ -239,7 +239,7 @@
     <string name="history_prompt_copied">提示词已复制到剪贴板</string>
     <string name="history_load_more">加载更多</string>
     <string name="history_load_more_count">加载更多 (剩余 %d 步)</string>
-    
+
     <!-- Debug Logs -->
     <string name="settings_debug_logs">调试日志</string>
     <string name="settings_debug_logs_description">导出日志用于问题排查</string>
@@ -250,7 +250,7 @@
     <string name="settings_logs_export_failed">导出失败</string>
     <string name="settings_logs_empty">暂无日志</string>
     <string name="settings_clear_logs_confirm">确定要清空所有日志吗？</string>
-    
+
     <!-- AutoGLM Keyboard -->
     <string name="keyboard_name">AutoGLM Keyboard</string>
     <string name="keyboard_status_ready">就绪</string>
@@ -303,7 +303,7 @@
     <string name="voice_delete_confirm_message">确定要删除语音模型吗？删除后需要重新下载才能使用语音输入功能。</string>
     <string name="voice_delete_success">语音模型已删除</string>
     <string name="voice_wake_word_detected">检测到唤醒词: %1$s</string>
-    
+
     <!-- Voice Status Messages -->
     <string name="voice_recording_hint">正在聆听，请说话…</string>
     <string name="voice_recognizing_hint">正在识别中...</string>
@@ -315,7 +315,7 @@
     <string name="voice_confirm_with_countdown">确认 (%d)</string>
     <string name="voice_confirm">确认</string>
     <string name="voice_retry">重试</string>
-    
+
     <!-- Voice Error Messages -->
     <string name="voice_model_load_failed">语音模型加载失败</string>
     <string name="voice_recording_failed">语音输入失败</string>
@@ -367,6 +367,7 @@
     <string name="debug_history_cleared">测试历史已清空</string>
     <string name="debug_delete_history">删除记录</string>
     <string name="debug_delete_history_confirm">确定要删除这条测试记录吗？</string>
+    <string name="debug_history_deleted">记录已删除</string>
     <string name="debug_save_template_title">保存提示词模板</string>
     <string name="debug_template_name_hint">模板名称</string>
     <string name="debug_template_empty">模板名称和内容不能为空</string>
@@ -377,4 +378,25 @@
     <string name="debug_unsaved_changes_message">当前有未保存的更改，是否放弃？</string>
     <string name="debug_prompt_empty">请先输入提示词内容</string>
     <string name="dialog_discard">放弃</string>
+
+    <!-- Debug History Detail -->
+    <string name="debug_history_detail_title">测试详情</string>
+    <string name="debug_export">导出</string>
+    <string name="debug_copy">复制</string>
+    <string name="debug_basic_info">📋 基本信息</string>
+    <string name="debug_template">模板</string>
+    <string name="debug_time">时间</string>
+    <string name="debug_status">状态</string>
+    <string name="debug_model_params">⚙️ 模型参数</string>
+    <string name="debug_model_name">模型</string>
+    <string name="debug_temperature">Temperature</string>
+    <string name="debug_max_tokens">Max Tokens</string>
+    <string name="debug_api_url">API</string>
+    <string name="debug_input_data">📥 输入数据</string>
+    <string name="debug_notification_count">通知数量</string>
+    <string name="debug_distribution">分布</string>
+    <string name="debug_system_prompt">🤖 系统提示词</string>
+    <string name="debug_user_prompt">👤 用户提示词</string>
+    <string name="debug_model_response">📤 模型响应</string>
+    <string name="back">返回</string>
 </resources>

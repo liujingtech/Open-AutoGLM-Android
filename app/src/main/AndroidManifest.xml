@@ -96,6 +96,11 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
 
+        <activity
+            android:name=".debug.DebugHistoryDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
         <provider
             android:name="rikka.shizuku.ShizukuProvider"
             android:authorities="${applicationId}.shizuku"
@@ -165,7 +170,7 @@
             android:name=".voice.ContinuousListeningService"
             android:foregroundServiceType="microphone"
             android:exported="false" />
-        
+
 
     </application>
 

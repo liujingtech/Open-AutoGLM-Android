@@ -4,10 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.HorizontalScrollView
 import android.widget.ImageButton
 import android.widget.ProgressBar
-import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -366,21 +364,8 @@ class DebugFragment : Fragment() {
     }
 
     private fun showHistoryDetail(history: DebugTestHistory) {
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
-
-        MaterialAlertDialogBuilder(requireContext())
-            .setTitle(history.promptTemplateName)
-            .setMessage("""
-时间: ${dateFormat.format(Date(history.timestamp))}
-
-输入数据:
-${history.inputNotifications.take(500)}${if (history.inputNotifications.length > 500) "..." else ""}
-
-模型响应:
-${history.modelResponse}
-            """.trimIndent())
-            .setPositiveButton(android.R.string.ok, null)
-            .show()
+        // 跳转到详情页面
+        DebugHistoryDetailActivity.start(requireContext(), history.id)
     }
 
     private fun confirmDeleteHistory(history: DebugTestHistory) {

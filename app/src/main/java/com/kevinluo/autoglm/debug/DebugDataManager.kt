@@ -41,8 +41,65 @@ class DebugDataManager private constructor(private val context: Context) {
                 instance ?: DebugDataManager(context.applicationContext).also { instance = it }
             }
 
-        // 5个预置提示词模板
+        // 工程版提示词模板
+        private val ENGINEERING_TEMPLATE_CONTENT = """# 角色
+你是车载智能助手，专注于停车场景的手机通知汇总，输出需适配车机端显示和TTS语音播报。
+你必须严格按照要求输出以下格式：
+<tts>{think}</tts>
+<tts>{tts}</tts>
+<show>{show}</show>
+
+其中：
+- {think} 是对你分级、筛选、汇总逻辑的简短推理，不超过30字。
+- {tts} 是本次要播放给用户的语音内容，只播报重要信息。
+- {show} 是本次要显示给用户的完整结构化汇总。
+
+# 重要度分级规则（必须严格执行）
+1. 一级（必须TTS播报）
+   - 工作类：企业微信待审批、会议提醒、工作通知
+   - 财务类：账户变动、收款、还款、银行卡提醒
+   - 安全类：异常登录、安全警告、违章提醒
+
+2. 二级（TTS简要汇总，文本展示）
+   - 社交类：微信、QQ个人消息、家人、重要群聊
+   - 生活类：快递、外卖、取件码、水电煤缴费
+   - 出行类：行程、停车、限行、导航相关
+
+3. 三级（仅展示，不播报）
+   - 营销类：促销、优惠、广告、活动推送
+   - 娱乐类：音乐、视频、游戏、热点推荐
+   - 低优先系统：存储提醒、非紧急更新
+
+# TTS 语音约束
+- 只播报一级 + 二级核心内容
+- 口语化、简洁、自然、无特殊符号
+- 不超过3句话，每句不超过15字
+- 无重要消息时输出：暂无重要通知
+
+# SHOW 展示约束
+- 结构化、分条、分应用展示
+- 每条内容简短，不超过20字
+- 按重要度排序：一级 > 二级 > 三级
+- 同类消息合并，不重复展示
+- 不编造信息，不添加无关内容
+
+# 禁止行为
+- 禁止输出格式外的任何多余文字
+- 禁止使用表情、特殊符号、markdown
+- 禁止遗漏关键信息
+- 禁止修改标签结构。
+
+以下是需要处理的通知数据：
+{notifications}"""
+
+        // 预置提示词模板
         private val BUILTIN_TEMPLATES = listOf(
+            PromptTemplate(
+                id = "builtin_engineering",
+                name = "工程版",
+                content = ENGINEERING_TEMPLATE_CONTENT,
+                isBuiltin = true
+            ),
             PromptTemplate(
                 id = "builtin_notification_summary",
                 name = "通知摘要",
@@ -183,7 +240,16 @@ class DebugDataManager private constructor(private val context: Context) {
                         inputNotifications = obj.getString("inputNotifications"),
                         modelResponse = obj.getString("modelResponse"),
                         timestamp = obj.getLong("timestamp"),
-                        success = obj.getBoolean("success")
+                        success = obj.getBoolean("success"),
+                        // 新增字段（兼容旧数据）
+                        systemPrompt = obj.optString("systemPrompt", ""),
+                        userPrompt = obj.optString("userPrompt", ""),
+                        modelName = obj.optString("modelName", ""),
+                        baseUrl = obj.optString("baseUrl", ""),
+                        temperature = obj.optDouble("temperature", 0.7).toFloat(),
+                        maxTokens = obj.optInt("maxTokens", 4096),
+                        notificationCount = obj.optInt("notificationCount", 0),
+                        notificationDistribution = obj.optString("notificationDistribution", "")
                     )
                 )
             }
@@ -323,6 +389,8 @@ class DebugDataManager private constructor(private val context: Context) {
         saveHistory(list)
     }
 
+    fun getHistoryById(id: String): DebugTestHistory? = _testHistory.value.find { it.id == id }
+
     fun deleteHistory(historyId: String) {
         val list = _testHistory.value.filter { it.id != historyId }
         _testHistory.value = list
@@ -345,6 +413,15 @@ class DebugDataManager private constructor(private val context: Context) {
                 put("modelResponse", history.modelResponse)
                 put("timestamp", history.timestamp)
                 put("success", history.success)
+                // 新增字段
+                put("systemPrompt", history.systemPrompt)
+                put("userPrompt", history.userPrompt)
+                put("modelName", history.modelName)
+                put("baseUrl", history.baseUrl)
+                put("temperature", history.temperature)
+                put("maxTokens", history.maxTokens)
+                put("notificationCount", history.notificationCount)
+                put("notificationDistribution", history.notificationDistribution)
             }
             array.put(obj)
         }

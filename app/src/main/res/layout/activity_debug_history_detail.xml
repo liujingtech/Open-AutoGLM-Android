@@ -558,6 +558,51 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- 全部内容编辑框（方便全选复制） -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="@color/surface"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📋 全部内容（长按可全选复制）"
+                        android:textColor="@color/primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/allContentEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp"
+                        android:fontFamily="monospace"
+                        android:background="@color/surface_variant"
+                        android:padding="12dp"
+                        android:gravity="top|start"
+                        android:scrollbars="vertical"
+                        android:inputType="textMultiLine|none"
+                        android:imeOptions="flagNoExtractUi"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        tools:text="全部内容..." />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

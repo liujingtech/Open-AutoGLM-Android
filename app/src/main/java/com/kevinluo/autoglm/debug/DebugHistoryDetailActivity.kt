@@ -5,6 +5,7 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -13,7 +14,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.lifecycleScope
 import com.kevinluo.autoglm.BaseActivity
 import com.kevinluo.autoglm.R
-import com.kevinluo.autoglm.util.Logger
 import com.google.android.material.button.MaterialButton
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
@@ -46,6 +46,7 @@ class DebugHistoryDetailActivity : BaseActivity() {
     private lateinit var systemPromptText: TextView
     private lateinit var userPromptText: TextView
     private lateinit var responseText: TextView
+    private lateinit var allContentEdit: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,6 +73,7 @@ class DebugHistoryDetailActivity : BaseActivity() {
         systemPromptText = findViewById(R.id.systemPromptText)
         userPromptText = findViewById(R.id.userPromptText)
         responseText = findViewById(R.id.responseText)
+        allContentEdit = findViewById(R.id.allContentEdit)
     }
 
     private fun setupListeners() {
@@ -135,17 +137,13 @@ class DebugHistoryDetailActivity : BaseActivity() {
         systemPromptText.text = h.systemPrompt.ifEmpty { "未记录" }
         userPromptText.text = h.userPrompt.ifEmpty { "未记录" }
         responseText.text = h.modelResponse
+
+        // 全部内容编辑框
+        allContentEdit.setText(buildAllContent(h))
     }
 
-    private fun copyToClipboard(label: String, content: String) {
-        val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-        val clip = ClipData.newPlainText(label, content)
-        clipboard.setPrimaryClip(clip)
-        Toast.makeText(this, "$label 已复制", Toast.LENGTH_SHORT).show()
-    }
-
-    private fun exportAll(h: DebugTestHistory) {
-        val content = """
+    private fun buildAllContent(h: DebugTestHistory): String {
+        return """
 ========== 测试记录 ==========
 模板: ${h.promptTemplateName}
 时间: ${dateFormat.format(Date(h.timestamp))}
@@ -170,7 +168,17 @@ ${h.userPrompt}
 ========== 模型响应 ==========
 ${h.modelResponse}
 """.trimIndent()
+    }
 
+    private fun copyToClipboard(label: String, content: String) {
+        val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val clip = ClipData.newPlainText(label, content)
+        clipboard.setPrimaryClip(clip)
+        Toast.makeText(this, "$label 已复制", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun exportAll(h: DebugTestHistory) {
+        val content = buildAllContent(h)
         copyToClipboard("全部内容", content)
     }
 

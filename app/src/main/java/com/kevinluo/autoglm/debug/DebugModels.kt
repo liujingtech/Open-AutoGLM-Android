@@ -7,7 +7,7 @@ import java.util.UUID
  *
  * @property id 唯一标识
  * @property name 模板名称
- * @property content 提示词内容
+ * @property content 提示词内容（包含系统提示词和用户提示词，用 ---USER_PROMPT--- 分隔）
  * @property isBuiltin 是否为预置模板（预置模板不可删除）
  */
 data class PromptTemplate(
@@ -15,7 +15,27 @@ data class PromptTemplate(
     val name: String,
     val content: String,
     val isBuiltin: Boolean = false
-)
+) {
+    companion object {
+        const val USER_PROMPT_SEPARATOR = "---USER_PROMPT---"
+    }
+
+    /**
+     * 获取系统提示词部分（分隔符之前的内容）
+     */
+    fun getSystemPrompt(): String {
+        val parts = content.split(USER_PROMPT_SEPARATOR, limit = 2)
+        return if (parts.size == 2) parts[0].trim() else content.trim()
+    }
+
+    /**
+     * 获取用户提示词模板（分隔符之后的内容，包含 {notifications} 占位符）
+     */
+    fun getUserPromptTemplate(): String {
+        val parts = content.split(USER_PROMPT_SEPARATOR, limit = 2)
+        return if (parts.size == 2) parts[1].trim() else "{notifications}"
+    }
+}
 
 /**
  * 模拟通知数据

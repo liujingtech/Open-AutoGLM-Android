@@ -89,6 +89,7 @@ class DebugDataManager private constructor(private val context: Context) {
 - 禁止遗漏关键信息
 - 禁止修改标签结构。
 
+---USER_PROMPT---
 以下是需要处理的通知数据：
 {notifications}"""
 
@@ -147,6 +148,7 @@ class DebugDataManager private constructor(private val context: Context) {
 - 禁止修改标签结构
 - 禁止输出任何解释性内容
 
+---USER_PROMPT---
 以下是需要处理的通知数据：
 {notifications}"""
 

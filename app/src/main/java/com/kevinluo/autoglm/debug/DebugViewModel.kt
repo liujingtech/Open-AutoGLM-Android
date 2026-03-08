@@ -18,9 +18,6 @@ class DebugViewModel(application: Application) : AndroidViewModel(application) {
     private val debugDataManager = DebugDataManager.getInstance(application)
     private val settingsManager = SettingsManager.getInstance(application)
 
-    // 系统提示词常量
-    private val DEFAULT_SYSTEM_PROMPT = "你是一个帮助用户处理通知消息的智能助手。请根据用户的要求处理通知数据。"
-
     data class DebugUiState(
         val selectedTemplateId: String? = null,
         val editedContent: String = "",
@@ -116,8 +113,8 @@ class DebugViewModel(application: Application) : AndroidViewModel(application) {
 
         val selectedNotifications = mockNotifications.value.filter { it.id in selectedIds }
         val notificationsJson = buildNotificationsJson(selectedNotifications)
-        val userPrompt = template.content.replace("{notifications}", notificationsJson)
-        val systemPrompt = DEFAULT_SYSTEM_PROMPT
+        val systemPrompt = template.getSystemPrompt()
+        val userPrompt = template.getUserPromptTemplate().replace("{notifications}", notificationsJson)
 
         _uiState.value = _uiState.value.copy(
             isRunning = true,
@@ -207,7 +204,6 @@ class DebugViewModel(application: Application) : AndroidViewModel(application) {
                                 inputNotifications = notificationsJson,
                                 modelResponse = "错误: ${error.message}",
                                 success = false,
-                                // 新增字段
                                 systemPrompt = systemPrompt,
                                 userPrompt = userPrompt,
                                 modelName = modelConfig.modelName,
@@ -243,8 +239,8 @@ class DebugViewModel(application: Application) : AndroidViewModel(application) {
                         inputNotifications = notificationsJson,
                         modelResponse = "错误: $error",
                         success = false,
-                        systemPrompt = DEFAULT_SYSTEM_PROMPT,
-                        userPrompt = userPrompt,
+                        systemPrompt = template.getSystemPrompt(),
+                        userPrompt = template.getUserPromptTemplate().replace("{notifications}", notificationsJson),
                         modelName = modelConfig?.modelName ?: "",
                         baseUrl = modelConfig?.baseUrl ?: "",
                         temperature = modelConfig?.temperature ?: 0.7f,

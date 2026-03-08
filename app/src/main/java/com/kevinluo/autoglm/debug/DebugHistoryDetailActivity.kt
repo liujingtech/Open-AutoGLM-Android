@@ -171,7 +171,7 @@ ${h.userPrompt}
 ${h.modelResponse}
 """.trimIndent()
 
-        copyToClipboard("测试记录", content)
+        copyToClipboard("全部内容", content)
     }
 
     private fun confirmDelete() {

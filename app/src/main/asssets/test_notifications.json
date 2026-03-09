@@ -1,0 +1,1004 @@
+{
+  "notifications": [
+    {
+      "id": 1,
+      "package": "com.taobao.taobao",
+      "appName": "淘宝",
+      "title": "发货提醒",
+      "text": "您的订单已发货",
+      "bigText": "您的订单已发货，快递公司：中通快递，运单号：7312345678901，预计3天后送达。",
+      "category": "EXPRESS",
+      "idealSummary": "📦 快递：淘宝订单已发货，中通快递7312345678901，预计3天后送达"
+    },
+    {
+      "id": 2,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "李明",
+      "text": "明天上午的会议改到10点半了",
+      "bigText": "明天上午的会议改到10点半了，记得带上项目资料。",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💬 李明：明天上午会议改到10点半，记得带项目资料"
+    },
+    {
+      "id": 3,
+      "package": "com.icbc",
+      "appName": "工商银行",
+      "title": "验证码",
+      "text": "您的验证码是：837294",
+      "bigText": "【工商银行】您的验证码是：837294，5分钟内有效，请勿泄露给他人。",
+      "category": "VERIFICATION",
+      "idealSummary": "⚡ 验证码：837294（工商银行，5分钟有效）"
+    },
+    {
+      "id": 4,
+      "package": "com.meituan.meituan",
+      "appName": "美团外卖",
+      "title": "订单状态",
+      "text": "骑手正在配送中",
+      "bigText": "您的美团外卖订单正在配送中，骑手：小王，预计12:30送达，联系电话：138****1234。",
+      "category": "FOOD_DELIVERY",
+      "idealSummary": "🍔 外卖：美团订单配送中，骑手小王，预计12:30送达"
+    },
+    {
+      "id": 5,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "工作群",
+      "text": "张总：周五下午3点开例会",
+      "bigText": "张总：周五下午3点开例会，大家准备好本周工作汇报。@所有人",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 工作群：周五下午3点例会，需准备周报"
+    },
+    {
+      "id": 6,
+      "package": "com.cainiao.wireless",
+      "appName": "菜鸟裹裹",
+      "title": "快递已签收",
+      "text": "您的包裹已签收",
+      "bigText": "您的京东包裹已由驿站代收，取件码：6-8-9，地址：阳光小区菜鸟驿站。",
+      "category": "EXPRESS",
+      "idealSummary": "📦 快递：京东包裹已签收，取件码6-8-9，阳光小区菜鸟驿站"
+    },
+    {
+      "id": 7,
+      "package": "com.alibaba.android.rimet",
+      "appName": "钉钉",
+      "title": "日程提醒",
+      "text": "明天9:00 产品评审会议",
+      "bigText": "【日程提醒】明天上午9:00-11:00 产品评审会议，地点：3号会议室，请准时参加。",
+      "category": "CALENDAR",
+      "idealSummary": "📅 日程：明天9:00-11:00产品评审会议，3号会议室"
+    },
+    {
+      "id": 8,
+      "package": "com.taobao.taobao",
+      "appName": "淘宝",
+      "title": "促销活动",
+      "text": "双11大促即将开始",
+      "bigText": "双11大促即将开始！全场5折起，预售已开启，快来加购心仪商品吧！",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 9,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "妈妈",
+      "text": "周末回家吃饭吗？",
+      "bigText": "周末回家吃饭吗？你爸做了你爱吃的红烧肉。",
+      "category": "FAMILY",
+      "idealSummary": "👨‍👩‍👧 妈妈：周末回家吃饭，有红烧肉"
+    },
+    {
+      "id": 10,
+      "package": "com.jingdong.app.mall",
+      "appName": "京东",
+      "title": "价格保护",
+      "text": "您的订单已申请价保",
+      "bigText": "您的订单已成功申请价格保护，差价15元将原路退回，请注意查收。",
+      "category": "SYSTEM",
+      "idealSummary": "💰 京东：订单价保成功，退款15元"
+    },
+    {
+      "id": 11,
+      "package": "com.sina.weibo",
+      "appName": "微博",
+      "title": "热门话题",
+      "text": "您关注的话题有新动态",
+      "bigText": "您关注的#科技新闻#话题有32条新动态，点击查看详情。",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 12,
+      "package": "com.alipay.android.app",
+      "appName": "支付宝",
+      "title": "转账提醒",
+      "text": "收到转账200.00元",
+      "bigText": "收到来自张三的转账200.00元，备注：饭钱。点击查看详情。",
+      "category": "FINANCE",
+      "idealSummary": "💸 支付宝：收到张三转账200元（饭钱）"
+    },
+    {
+      "id": 13,
+      "package": "com.tencent.wework",
+      "appName": "企业微信",
+      "title": "审批通知",
+      "text": "您的请假申请已通过",
+      "bigText": "您的请假申请已通过审批，请假时间：3月15日-3月16日，共2天。",
+      "category": "WORK",
+      "idealSummary": "✅ 企微：请假申请已通过，3月15-16日共2天"
+    },
+    {
+      "id": 14,
+      "package": "com.ele.me",
+      "appName": "饿了么",
+      "title": "订单已送达",
+      "text": "您的订单已送达",
+      "bigText": "您的饿了么订单已送达，祝您用餐愉快！记得给骑手好评哦~",
+      "category": "FOOD_DELIVERY",
+      "idealSummary": "🍔 外卖：饿了么订单已送达"
+    },
+    {
+      "id": 15,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "家人群",
+      "text": "姐姐：周末聚餐定哪里？",
+      "bigText": "姐姐：周末聚餐定哪里？大家有什么建议吗？",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 家人群：讨论周末聚餐地点"
+    },
+    {
+      "id": 16,
+      "package": "com.cmbchina.ccd.pluto.cmbActivity",
+      "appName": "招商银行",
+      "title": "账单提醒",
+      "text": "您的信用卡账单已出",
+      "bigText": "您的招商银行信用卡账单已出，本期应还3,256.80元，最后还款日3月25日。",
+      "category": "FINANCE",
+      "idealSummary": "💳 招行：信用卡账单3256.80元，3月25日还款"
+    },
+    {
+      "id": 17,
+      "package": "com.microsoft.teams",
+      "appName": "Teams",
+      "title": "会议邀请",
+      "text": "您被邀请参加会议",
+      "bigText": "您被邀请参加「Q1项目复盘」会议，时间：周四14:00-15:30，地点：线上会议。",
+      "category": "WORK",
+      "idealSummary": "📅 Teams：周四14:00 Q1项目复盘会议（线上）"
+    },
+    {
+      "id": 18,
+      "package": "com.sf.activity",
+      "appName": "顺丰速运",
+      "title": "快递状态更新",
+      "text": "快件正在派送中",
+      "bigText": "您的顺丰快件正在派送中，快递员：王师傅，电话：139****5678，预计今日18:00前送达。",
+      "category": "EXPRESS",
+      "idealSummary": "📦 顺丰：快件派送中，预计今日18:00前送达"
+    },
+    {
+      "id": 19,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "服务通知",
+      "text": "微信支付凭证",
+      "bigText": "微信支付：您于03月10日12:30向美团外卖支付￥28.50，订单已完成。",
+      "category": "SYSTEM",
+      "idealSummary": null
+    },
+    {
+      "id": 20,
+      "package": "com.netease.cloudmusic",
+      "appName": "网易云音乐",
+      "title": "新歌推荐",
+      "text": "您关注的歌手发了新歌",
+      "bigText": "您关注的歌手周杰伦发布了新歌《晴天》，快来收听吧！",
+      "category": "MARKETING",
+      "idealSummary": "🎵 网易云：周杰伦新歌《晴天》上线"
+    },
+    {
+      "id": 21,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "老王",
+      "text": "周末打球吗？",
+      "bigText": "周末打球吗？老地方，下午3点。",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💬 老王：周末下午3点打球，老地方"
+    },
+    {
+      "id": 22,
+      "package": "com.huawei.calendar",
+      "appName": "日历",
+      "title": "生日提醒",
+      "text": "明天是小红的生日",
+      "bigText": "明天是小红的生日，别忘了送上祝福！",
+      "category": "CALENDAR",
+      "idealSummary": "🎂 日程：明天是小红的生日"
+    },
+    {
+      "id": 23,
+      "package": "com.duowan.kiwi",
+      "appName": "虎牙直播",
+      "title": "直播提醒",
+      "text": "您关注的主播正在直播",
+      "bigText": "您关注的主播UZI正在直播《英雄联盟》，快来围观！",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 24,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "公司群",
+      "text": "人事：本月工资已发放",
+      "bigText": "人事：本月工资已发放，请各位同事查收。如有疑问请联系财务部。",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 公司群：本月工资已发放"
+    },
+    {
+      "id": 25,
+      "package": "com.jd.jrapp",
+      "appName": "京东金融",
+      "title": "收益到账",
+      "text": "您的基金收益已到账",
+      "bigText": "您的基金收益￥12.35已到账，累计收益￥1,256.80。",
+      "category": "FINANCE",
+      "idealSummary": "📈 京东金融：基金收益12.35元到账"
+    },
+    {
+      "id": 26,
+      "package": "com.taobao.trip",
+      "appName": "飞猪",
+      "title": "出行提醒",
+      "text": "您的航班即将起飞",
+      "bigText": "您的航班CA1234将于明天08:30从北京首都机场起飞，请提前2小时到达机场办理值机。",
+      "category": "CALENDAR",
+      "idealSummary": "✈️ 飞猪：明天08:30航班CA1234，北京首都机场"
+    },
+    {
+      "id": 27,
+      "package": "com.tencent.qq",
+      "appName": "QQ",
+      "title": "高中同学群",
+      "text": "班长：20周年同学聚会",
+      "bigText": "班长：20周年同学聚会定在五一假期，地点待定，大家有空吗？",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 高中群：20周年同学聚会五一假期"
+    },
+    {
+      "id": 28,
+      "package": "com.android.mms",
+      "appName": "短信",
+      "title": "10086",
+      "text": "您的话费余额不足",
+      "bigText": "【中国移动】尊敬的用户，您的话费余额已不足10元，请及时充值以免影响正常使用。",
+      "category": "SYSTEM",
+      "idealSummary": "📱 移动：话费余额不足10元，请充值"
+    },
+    {
+      "id": 29,
+      "package": "com.meituan.meituan",
+      "appName": "美团",
+      "title": "优惠提醒",
+      "text": "您有一张优惠券即将过期",
+      "bigText": "您有一张满50减10元优惠券即将在3天后过期，快去使用吧！",
+      "category": "MARKETING",
+      "idealSummary": "🎫 美团：满50减10优惠券3天后过期"
+    },
+    {
+      "id": 30,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "小李",
+      "text": "文件已发你邮箱",
+      "bigText": "文件已发你邮箱，请查收。有问题随时联系。",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💬 小李：文件已发邮箱，请查收"
+    },
+    {
+      "id": 31,
+      "package": "com.lbe.security.miui",
+      "appName": "安全中心",
+      "title": "安全提醒",
+      "text": "发现异常登录",
+      "bigText": "检测到您的账号在新设备上登录，如非本人操作，请立即修改密码。",
+      "category": "SYSTEM",
+      "idealSummary": "⚠️ 安全：账号在新设备登录，请确认"
+    },
+    {
+      "id": 32,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "业主群",
+      "text": "物业：明早8点停水",
+      "bigText": "物业通知：因管道维修，明早8:00-12:00停水，请各位业主提前储水。",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 业主群：明天8:00-12:00停水，请储水"
+    },
+    {
+      "id": 33,
+      "package": "com.jingdong.app.mall",
+      "appName": "京东",
+      "title": "降价提醒",
+      "text": "您关注的商品降价了",
+      "bigText": "您关注的「小米14 Pro」降价了！现价4299元，比之前便宜了300元。",
+      "category": "MARKETING",
+      "idealSummary": "🏷️ 京东：小米14 Pro降价300元，现价4299"
+    },
+    {
+      "id": 34,
+      "package": "com.didiglobal.passenger",
+      "appName": "滴滴出行",
+      "title": "行程结束",
+      "text": "本次行程费用￥25.60",
+      "bigText": "您的滴滴行程已结束，本次费用￥25.60，感谢您的使用，祝您生活愉快！",
+      "category": "SYSTEM",
+      "idealSummary": "🚗 滴滴：行程结束，费用25.60元"
+    },
+    {
+      "id": 35,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "女朋友",
+      "text": "晚上去看电影吧",
+      "bigText": "晚上去看电影吧，最近有部新片《流浪地球3》评分很高！",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💬 女朋友：晚上看电影《流浪地球3》"
+    },
+    {
+      "id": 36,
+      "package": "com.xunmeng.pinduoduo",
+      "appName": "拼多多",
+      "title": "拼单成功",
+      "text": "您的拼单已成功",
+      "bigText": "恭喜！您的拼单已成功，商品将于24小时内发货，敬请期待！",
+      "category": "EXPRESS",
+      "idealSummary": "📦 拼多多：拼单成功，24小时内发货"
+    },
+    {
+      "id": 37,
+      "package": "com.sankuai.meituan",
+      "appName": "大众点评",
+      "title": "新店推荐",
+      "text": "附近新开了一家网红餐厅",
+      "bigText": "距离您500米新开了一家网红餐厅「小龙坎火锅」，限时8折优惠！",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 38,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "技术交流群",
+      "text": "大佬：新框架推荐",
+      "bigText": "大佬：推荐大家看看Jetpack Compose，Android新UI框架，开发效率提升很多。",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 技术群：讨论Jetpack Compose框架"
+    },
+    {
+      "id": 39,
+      "package": "com.huawei.health",
+      "appName": "华为健康",
+      "title": "运动提醒",
+      "text": "您今日步数已达标",
+      "bigText": "恭喜！您今日步数已达10000步，消耗热量320千卡，继续保持！",
+      "category": "SYSTEM",
+      "idealSummary": "🏃 华为健康：今日10000步达标，消耗320千卡"
+    },
+    {
+      "id": 40,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "老爸",
+      "text": "血压药记得吃",
+      "bigText": "血压药记得吃，别总是忘。身体要紧。",
+      "category": "FAMILY",
+      "idealSummary": "👨 老爸：提醒吃血压药"
+    },
+    {
+      "id": 41,
+      "package": "com.ss.android.article.news",
+      "appName": "今日头条",
+      "title": "热点推送",
+      "text": "今日热点新闻",
+      "bigText": "今日热点：科技股大涨，AI概念持续火热，多只个股涨停。",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 42,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "投资群",
+      "text": "老师：明天大盘看涨",
+      "bigText": "老师分析：明天大盘看涨，建议关注科技和新能源板块。",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 投资群：明天大盘看涨，关注科技新能源"
+    },
+    {
+      "id": 43,
+      "package": "com.cctv.yangshipin",
+      "appName": "央视频",
+      "title": "直播提醒",
+      "text": "晚间新闻即将开始",
+      "bigText": "《新闻联播》即将于19:00开始，敬请收看。",
+      "category": "SYSTEM",
+      "idealSummary": null
+    },
+    {
+      "id": 44,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "同事小张",
+      "text": "PPT帮我看看",
+      "bigText": "PPT做好了你帮看看有没有问题，明天要用。",
+      "category": "WORK",
+      "idealSummary": "💼 小张：PPT已完成，请帮忙检查"
+    },
+    {
+      "id": 45,
+      "package": "com.qunar",
+      "appName": "去哪儿",
+      "title": "酒店确认",
+      "text": "您的酒店预订已确认",
+      "bigText": "您预订的杭州西湖希尔顿酒店已确认，入住时间：3月20日-22日，共2晚。",
+      "category": "CALENDAR",
+      "idealSummary": "🏨 去哪儿：杭州希尔顿酒店已确认，3月20-22日"
+    },
+    {
+      "id": 46,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "健身群",
+      "text": "教练：明天休息日",
+      "bigText": "教练提醒：明天是休息日，记得让肌肉恢复，不要剧烈运动。",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 健身群：明天休息日，让肌肉恢复"
+    },
+    {
+      "id": 47,
+      "package": "com.taobao.idlefish",
+      "appName": "闲鱼",
+      "title": "买家已付款",
+      "text": "您的商品已售出",
+      "bigText": "您发布的「iPhone 13 Pro」已被买家拍下并付款，请尽快发货。",
+      "category": "SYSTEM",
+      "idealSummary": "💰 闲鱼：iPhone 13 Pro已售出，请发货"
+    },
+    {
+      "id": 48,
+      "package": "com.eg.android.AlipayGphone",
+      "appName": "支付宝",
+      "title": "花呗还款",
+      "text": "本月账单已出",
+      "bigText": "您的花呗账单已出，本期应还￥1,580.00，请于10日前还款。",
+      "category": "FINANCE",
+      "idealSummary": "💳 花呗：账单1580元，10日前还款"
+    },
+    {
+      "id": 49,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "游戏群",
+      "text": "今晚开黑吗？",
+      "bigText": "今晚开黑吗？8点上线，还是老位置。",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 游戏群：今晚8点开黑"
+    },
+    {
+      "id": 50,
+      "package": "com.zhihu.android",
+      "appName": "知乎",
+      "title": "热门回答",
+      "text": "您关注的问题有新回答",
+      "bigText": "您关注的「如何提高工作效率」有23条新回答，点击查看。",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 51,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "房东",
+      "text": "下月房租该交了",
+      "bigText": "提醒一下，下个月房租3000元，麻烦月底前转一下，谢谢。",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "🏠 房东：下月房租3000元，月底前支付"
+    },
+    {
+      "id": 52,
+      "package": "com.unionpay",
+      "appName": "云闪付",
+      "title": "消费提醒",
+      "text": "您有一笔新消费",
+      "bigText": "您于03月10日在星巴克消费￥38.00，余额￥2,560.00。",
+      "category": "FINANCE",
+      "idealSummary": "💳 云闪付：星巴克消费38元"
+    },
+    {
+      "id": 53,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "大学室友群",
+      "text": "老三：我结婚了",
+      "bigText": "老三：兄弟们，我结婚了！5月1日婚礼，地点在成都，一定要来啊！",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 室友群：老三5月1日成都婚礼"
+    },
+    {
+      "id": 54,
+      "package": "com.xiaomi.hm.health",
+      "appName": "小米运动",
+      "title": "睡眠报告",
+      "text": "昨晚睡眠质量良好",
+      "bigText": "您昨晚睡眠时长7.5小时，深睡2小时，睡眠质量评分85分。",
+      "category": "SYSTEM",
+      "idealSummary": "😴 小米运动：睡眠7.5小时，质量85分"
+    },
+    {
+      "id": 55,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "医生",
+      "text": "复查提醒",
+      "bigText": "您好，您的复查时间是下周一上午9点，请准时到院。",
+      "category": "CALENDAR",
+      "idealSummary": "🏥 医生：下周一上午9点复查"
+    },
+    {
+      "id": 56,
+      "package": "com.dianping.v1",
+      "appName": "美团",
+      "title": "预订提醒",
+      "text": "您的餐厅预订已确认",
+      "bigText": "您预订的海底捞（大悦城店）已确认，时间：今晚18:00，2人位。",
+      "category": "CALENDAR",
+      "idealSummary": "🍽️ 美团：海底捞预订确认，今晚18:00，2人"
+    },
+    {
+      "id": 57,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "老婆",
+      "text": "下班买菜回来",
+      "bigText": "下班买点菜回来，顺便带瓶酱油。",
+      "category": "FAMILY",
+      "idealSummary": "👩 老婆：下班买菜+带酱油"
+    },
+    {
+      "id": 58,
+      "package": "com.jingdong.app.mall",
+      "appName": "京东",
+      "title": "配送提醒",
+      "text": "快递即将送达",
+      "bigText": "您的京东快递即将送达，快递员正在派件中，请保持电话畅通。",
+      "category": "EXPRESS",
+      "idealSummary": "📦 京东：快递派送中"
+    },
+    {
+      "id": 59,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "孩子班主任",
+      "text": "家长会通知",
+      "bigText": "各位家长：本周五下午3点召开家长会，请准时参加。",
+      "category": "WORK",
+      "idealSummary": "📚 班主任：周五下午3点家长会"
+    },
+    {
+      "id": 60,
+      "package": "com.netease.mail",
+      "appName": "网易邮箱",
+      "title": "新邮件",
+      "text": "收到1封新邮件",
+      "bigText": "收到来自hr@company.com的邮件：面试邀请 - 高级开发工程师岗位。",
+      "category": "EMAIL",
+      "idealSummary": "📧 邮箱：收到HR面试邀请（高级开发工程师）"
+    },
+    {
+      "id": 61,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "跑步群",
+      "text": "明早5公里约跑",
+      "bigText": "明早6点公园门口5公里约跑，有意向的报名！",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 跑步群：明早6点公园5公里约跑"
+    },
+    {
+      "id": 62,
+      "package": "com.sf.express",
+      "appName": "顺丰",
+      "title": "收件提醒",
+      "text": "您有快递待取",
+      "bigText": "您的顺丰快递已到达丰巢柜，取件码：892345，请于24小时内取件。",
+      "category": "EXPRESS",
+      "idealSummary": "📦 顺丰：快递到丰巢柜，取件码892345"
+    },
+    {
+      "id": 63,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "客户王总",
+      "text": "方案看过了，不错",
+      "bigText": "方案看过了，整体不错。有几个小细节明天电话沟通一下。",
+      "category": "WORK",
+      "idealSummary": "💼 王总：方案通过，明天电话沟通细节"
+    },
+    {
+      "id": 64,
+      "package": "com.lufax.android",
+      "appName": "陆金所",
+      "title": "理财收益",
+      "text": "本月理财收益到账",
+      "bigText": "您的理财产品本月收益￥356.80已到账，年化收益率4.5%。",
+      "category": "FINANCE",
+      "idealSummary": "📈 陆金所：理财收益356.80元到账"
+    },
+    {
+      "id": 65,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "小区群",
+      "text": "邻居：有人丢猫吗？",
+      "bigText": "邻居：有人在5栋楼下发现一只橘猫，看着像是走丢的，有人认识吗？",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 小区群：5栋发现走丢橘猫"
+    },
+    {
+      "id": 66,
+      "package": "com.bilibili",
+      "appName": "哔哩哔哩",
+      "title": "更新提醒",
+      "text": "您关注的UP主更新了",
+      "bigText": "您关注的UP主「老番茄」发布了新视频《新游推荐》，快来观看！",
+      "category": "MARKETING",
+      "idealSummary": "🎬 B站：老番茄更新《新游推荐》"
+    },
+    {
+      "id": 67,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "哥哥",
+      "text": "爸妈身体都好",
+      "bigText": "放心吧，爸妈身体都挺好的，周末有空回来看看。",
+      "category": "FAMILY",
+      "idealSummary": "👨 哥哥：父母身体好，周末回家看看"
+    },
+    {
+      "id": 68,
+      "package": "com.huawei.appmarket",
+      "appName": "应用市场",
+      "title": "更新提醒",
+      "text": "有5个应用可更新",
+      "bigText": "您的手机有5个应用可更新，建议在WiFi环境下进行更新。",
+      "category": "SYSTEM",
+      "idealSummary": "📱 应用市场：5个应用可更新"
+    },
+    {
+      "id": 69,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "校友群",
+      "text": "校庆活动通知",
+      "bigText": "各位校友：学校将在4月举办120周年校庆活动，欢迎大家回校参加！",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 校友群：4月120周年校庆活动"
+    },
+    {
+      "id": 70,
+      "package": "com.sdu.didi.psnger",
+      "appName": "花小猪",
+      "title": "优惠券到账",
+      "text": "您有一张5元优惠券",
+      "bigText": "恭喜您获得5元打车优惠券，有效期7天，快来使用吧！",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 71,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "前任",
+      "text": "好久不见",
+      "bigText": "好久不见，最近怎么样？",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💬 前任：问候近况"
+    },
+    {
+      "id": 72,
+      "package": "com.cainiao.wireless",
+      "appName": "菜鸟",
+      "title": "取件提醒",
+      "text": "您有2个包裹待取",
+      "bigText": "您在阳光驿站有2个包裹待取，请于3日内取走，逾期将退回。",
+      "category": "EXPRESS",
+      "idealSummary": "📦 菜鸟：阳光驿站有2个包裹待取，限3日"
+    },
+    {
+      "id": 73,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "项目经理",
+      "text": "周报记得提交",
+      "bigText": "本周周报还没收到，麻烦下班前提交一下。",
+      "category": "WORK",
+      "idealSummary": "💼 项目经理：下班前提交周报"
+    },
+    {
+      "id": 74,
+      "package": "com.galaxy.stock",
+      "appName": "银河证券",
+      "title": "交易提醒",
+      "text": "您的委托已成交",
+      "bigText": "您的买入委托已成交，股票：贵州茅台，数量：10股，成交价：1850.00元。",
+      "category": "FINANCE",
+      "idealSummary": "📈 银河证券：茅台10股成交，价1850元"
+    },
+    {
+      "id": 75,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "健身教练",
+      "text": "今天练腿",
+      "bigText": "今天练腿，记得带护膝！动作要标准，不要追求大重量。",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💪 教练：今天练腿，带护膝"
+    },
+    {
+      "id": 76,
+      "package": "com.sankuai.meituan.takeoutnew",
+      "appName": "美团外卖",
+      "title": "红包到账",
+      "text": "您有新的外卖红包",
+      "bigText": "恭喜获得5元无门槛外卖红包，今日有效，快去下单吧！",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 77,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "闺蜜",
+      "text": "周末逛街去",
+      "bigText": "周末逛街去吧！好久没见了，顺便尝尝那家新开的甜品店。",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💬 闺蜜：周末逛街+甜品店"
+    },
+    {
+      "id": 78,
+      "package": "com.jingdong.pdj",
+      "appName": "京东到家",
+      "title": "配送完成",
+      "text": "您的订单已送达",
+      "bigText": "您的京东到家订单已送达，商品已放置门口，如有问题请联系配送员。",
+      "category": "FOOD_DELIVERY",
+      "idealSummary": "🛒 京东到家：订单已送达门口"
+    },
+    {
+      "id": 79,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "麻将群",
+      "text": "今晚有局",
+      "bigText": "今晚8点有局，地点老地方，来的扣1！",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 麻将群：今晚8点有局，老地方"
+    },
+    {
+      "id": 80,
+      "package": "com.android.bankabc",
+      "appName": "农业银行",
+      "title": "账户变动",
+      "text": "您有一笔转账支出",
+      "bigText": "您于03月10日14:30转账支出￥5,000.00，收款人：张三，余额￥12,580.00。",
+      "category": "FINANCE",
+      "idealSummary": "💳 农行：转账支出5000元给张三"
+    },
+    {
+      "id": 81,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "老同学",
+      "text": "周末聚会确认",
+      "bigText": "周末聚会确认一下，时间：周六中午12点，地点：海底捞，大家都没问题吧？",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💬 老同学：周六12点海底捞聚会"
+    },
+    {
+      "id": 82,
+      "package": "com.fenqile",
+      "appName": "分期乐",
+      "title": "还款提醒",
+      "text": "您的账单即将到期",
+      "bigText": "您的分期账单将于3天后到期，本期应还￥580.00，请及时还款。",
+      "category": "FINANCE",
+      "idealSummary": "💳 分期乐：账单580元，3天后到期"
+    },
+    {
+      "id": 83,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "健身群",
+      "text": "蛋白粉团购",
+      "bigText": "群主：蛋白粉团购开始了，原价399，团购价299，要的私信我！",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 健身群：蛋白粉团购299元"
+    },
+    {
+      "id": 84,
+      "package": "com.meituan.rent.ebike",
+      "appName": "美团单车",
+      "title": "骑行结束",
+      "text": "本次骑行费用￥2.50",
+      "bigText": "您的骑行已结束，时长15分钟，费用￥2.50，感谢您的使用！",
+      "category": "SYSTEM",
+      "idealSummary": "🚴 美团单车：骑行15分钟，费用2.50元"
+    },
+    {
+      "id": 85,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "老板",
+      "text": "明早9点开会",
+      "bigText": "明早9点开会，带上项目进度报告。",
+      "category": "WORK",
+      "idealSummary": "💼 老板：明早9点开会，带进度报告"
+    },
+    {
+      "id": 86,
+      "package": "com.autonavi.minimap",
+      "appName": "高德地图",
+      "title": "路况提醒",
+      "text": "前方拥堵",
+      "bigText": "您关注的路线当前拥堵，预计通行时间增加15分钟，建议绕行。",
+      "category": "SYSTEM",
+      "idealSummary": "🚗 高德：关注路线拥堵，增15分钟"
+    },
+    {
+      "id": 87,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "弟弟",
+      "text": "下月房租不够",
+      "bigText": "哥，下月房租差500，能借我一下吗？发工资还你。",
+      "category": "FAMILY",
+      "idealSummary": "👨 弟弟：借500元付房租"
+    },
+    {
+      "id": 88,
+      "package": "com.henzanapp.miaopai",
+      "appName": "秒拍",
+      "title": "热门视频",
+      "text": "今日最热视频推荐",
+      "bigText": "今日最热视频：《萌宠日常》播放量突破100万，快来围观！",
+      "category": "MARKETING",
+      "idealSummary": null
+    },
+    {
+      "id": 89,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "供应商小李",
+      "text": "货已发出",
+      "bigText": "货已发出，快递单号：SF1234567890，预计后天到。",
+      "category": "WORK",
+      "idealSummary": "💼 供应商：货已发，单号SF1234567890"
+    },
+    {
+      "id": 90,
+      "package": "com.jingcai.penguim",
+      "appName": "企鹅电竞",
+      "title": "赛事提醒",
+      "text": "LPL比赛即将开始",
+      "bigText": "您关注的LPL比赛「RNG vs EDG」将于今晚7点开始，记得观看！",
+      "category": "SYSTEM",
+      "idealSummary": "🎮 企鹅电竞：今晚7点RNG vs EDG"
+    },
+    {
+      "id": 91,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "瑜伽群",
+      "text": "明天早课取消",
+      "bigText": "教练：明天早课取消，大家可以在家自行练习，注意保持呼吸节奏。",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 瑜伽群：明天早课取消，自行练习"
+    },
+    {
+      "id": 92,
+      "package": "com.huawei.wallet",
+      "appName": "华为钱包",
+      "title": "交通卡充值",
+      "text": "充值成功",
+      "bigText": "您的交通卡充值￥50.00成功，当前余额￥128.50。",
+      "category": "FINANCE",
+      "idealSummary": "💳 华为钱包：交通卡充值50元，余128.50"
+    },
+    {
+      "id": 93,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "房产中介",
+      "text": "有套房子挺合适",
+      "bigText": "您之前看的那片区有套两居室刚挂牌，价格合适，有兴趣看看吗？",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "🏠 中介：有套两居室刚挂牌"
+    },
+    {
+      "id": 94,
+      "package": "com.bjkj.weather",
+      "appName": "天气",
+      "title": "天气预警",
+      "text": "明天有雨",
+      "bigText": "明天有小到中雨，气温15-20℃，出门记得带伞。",
+      "category": "SYSTEM",
+      "idealSummary": "🌤️ 天气：明天小到中雨，15-20℃，带伞"
+    },
+    {
+      "id": 95,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "相亲对象",
+      "text": "周末有空吗？",
+      "bigText": "周末有空吗？想约你出来吃个饭，聊聊。",
+      "category": "CHAT_PRIVATE",
+      "idealSummary": "💬 相亲对象：周末约饭"
+    },
+    {
+      "id": 96,
+      "package": "com.lenovo.club.app",
+      "appName": "联想",
+      "title": "保修提醒",
+      "text": "您的设备保修即将到期",
+      "bigText": "您的ThinkPad笔记本保修将于30天后到期，建议续保或检查设备。",
+      "category": "SYSTEM",
+      "idealSummary": "💻 联想：笔记本保修30天后到期"
+    },
+    {
+      "id": 97,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "读书群",
+      "text": "本周书单分享",
+      "bigText": "本周推荐书单：《人类简史》《原则》《思考快与慢》，有兴趣的一起读！",
+      "category": "CHAT_GROUP",
+      "idealSummary": "👥 读书群：本周推荐三本书"
+    },
+    {
+      "id": 98,
+      "package": "com.achievo.vipshop",
+      "appName": "唯品会",
+      "title": "特卖提醒",
+      "text": "您的关注品牌特卖开始",
+      "bigText": "您关注的Nike品牌特卖已开始，低至5折，限时24小时！",
+      "category": "MARKETING",
+      "idealSummary": "🏷️ 唯品会：Nike特卖5折，限时24小时"
+    },
+    {
+      "id": 99,
+      "package": "com.tencent.mm",
+      "appName": "微信",
+      "title": "妈妈",
+      "text": "生日快乐！",
+      "bigText": "儿子生日快乐！妈妈给你转了个红包，记得收。晚上记得吃长寿面！",
+      "category": "FAMILY",
+      "idealSummary": "🎂 妈妈：生日快乐，已发红包"
+    },
+    {
+      "id": 100,
+      "package": "com.tencent.qqlive",
+      "appName": "腾讯视频",
+      "title": "更新提醒",
+      "text": "您追的剧更新了",
+      "bigText": "您追的《狂飙》更新至第30集，快来观看！",
+      "category": "MARKETING",
+      "idealSummary": "📺 腾讯视频：《狂飙》更新至30集"
+    }
+  ]
+}
